@@ -8,6 +8,7 @@ function Footer() {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Education", href: "#Education" },
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
@@ -20,11 +21,11 @@ function Footer() {
       href: "https://www.linkedin.com/in/sahil-khedekar-9b0b642b9/",
       label: "LinkedIn",
     },
-    { icon: Mail, href: "mailto:worksahil@gmail.com.com", label: "Email" },
+    { icon: Mail, href: "mailto:worksahil@gmail.com", label: "Email" },
   ];
   return (
     <footer className="relative py-12 px-4 border-t border-border">
-      <div className="absolute bottom-0 left-1/2 w-96 h-32 bg-primary/10 rounded-full blur-[80px] pointer-events-none transform -translate-x-1/2" />
+      <div className="absolute bottom-0 left-1/2 w-98 h-32 bg-primary/10 rounded-full blur-[80px] pointer-events-none transform -translate-x-1/2" />
 
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 items-center mb-8">
@@ -46,7 +47,7 @@ function Footer() {
 
           {/* Navigation Links */}
           <div className="text-center">
-            <nav className="flex flex-wrap justify-center gap-6">
+            <nav className="flex flex-wrap justify-center gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}

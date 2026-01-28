@@ -21,7 +21,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 lg:py-32 px-4 relative">
+    <section id="experience" className="py-20 lg:py-5 px-4 relative">
       {/* Background Glow */}
       <div className="absolute top-1/3 right-0 w-72 h-72 bg-secondary/10 rounded-full blur-[100px] pointer-events-none" />
 

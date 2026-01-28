@@ -81,7 +81,7 @@ function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a
-                href="#project"
+                href="#projects"
                 className="btn-gradient px-8 py-4 rounded-full text-foreground font-semibold text-base transition-all duration-300 hover:bg-muted flex items-center justify-center gap-2 "
               >
                 View Projects <ArrowRight size={18} />

@@ -29,8 +29,8 @@ const Project = () => {
       isClient: false,
       category: "Web App",
       technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "https://your-portfolio-link.com",
-      githubUrl: "https://github.com/yourusername/portfolio",
+      liveUrl: "https://sahil-portfolio-102.netlify.app/",
+      githubUrl: "https://github.com/worksahil102/portfolio",
     },
   ];
   const filteredProjects = projects.filter((project) => {
@@ -74,9 +74,11 @@ const Project = () => {
         </div>
 
         {/*  project grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div key={project.id} className="w-full md:w-[48%] lg:w-[32%]">
+              <ProjectCard project={project} />
+            </div>
           ))}
         </div>
       </div>

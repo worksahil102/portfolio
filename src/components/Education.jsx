@@ -70,7 +70,6 @@ const Education = () => {
           <div className="flex-1 min-h-[300px]  relative">
             {education.map(
               (item, index) =>
-                // We map all but only show the active one to allow for transition effects if added later
                 activeTab === index && (
                   <div
                     key={item.id}
@@ -87,7 +86,7 @@ const Education = () => {
                         </p>
                       </div>
                       <div className="flex flex-col items-start md:items-end gap-1">
-                        <div className="flex items-center justify-center gap-2 text-gray-300 bg-gray-800 px-3 py-2 rounded-lg border border-gray-700">
+                        <div className="flex items-center justify-center gap-2 text-gray-300 bg-gray-800 px-3 py-2 rounded-lg border border-gray-700 whitespace-nowrap">
                           <Calendar size={14} />
                           <span className="text-sm">{item.year}</span>
                         </div>

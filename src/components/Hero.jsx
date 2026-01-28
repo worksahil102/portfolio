@@ -2,6 +2,7 @@ import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 import heroImage from "../assets/hero-developer.png";
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiJavascript, SiMui } from "react-icons/si";
+import Sahilcv from "../assets/Sahil_cv.pdf";
 
 function Hero() {
   const floatingCards = [
@@ -86,7 +87,11 @@ function Hero() {
               >
                 View Projects <ArrowRight size={18} />
               </a>
-              <a className="glass-card px-8 py-4 rounded-full text-foreground  font-semibold text-base transition-all duration-300 hover:bg-muted flex items-center justify-center gap-2">
+              <a
+                href={Sahilcv}
+                download={Sahilcv}
+                className="glass-card px-8 py-4 rounded-full text-foreground  font-semibold text-base transition-all duration-300 hover:bg-muted flex items-center justify-center gap-2"
+              >
                 <Download size={18} /> Download cv
               </a>
             </div>

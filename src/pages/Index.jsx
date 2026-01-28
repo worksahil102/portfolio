@@ -15,8 +15,8 @@ function Index() {
         <Navbar />
         <Hero />
         <About />
-        <Experience />
         <Education />
+        <Experience />
         <Project />
         <Contact />
         <Footer />

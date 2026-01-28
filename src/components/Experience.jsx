@@ -3,39 +3,21 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
+      title: "Frontend Developer (Freelance)",
+      company: "Client Project",
       location: "Remote",
-      period: "2022 - Present",
+      period: "2025 – Present",
       description:
-        "Leading frontend development for multiple high-traffic web applications. Implemented modern React patterns and improved performance by 40%.",
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
-      location: "Bangalore, India",
-      period: "2020 - 2022",
-      description:
-        "Developed responsive web applications for various clients. Collaborated with design team to implement pixel-perfect UI components.",
-      technologies: ["React", "JavaScript", "SCSS", "Redux"],
-    },
-    {
-      title: "Junior Web Developer",
-      company: "StartUp Hub",
-      location: "Mumbai, India",
-      period: "2019 - 2020",
-      description:
-        "Started my professional journey building websites and learning modern frontend frameworks. Contributed to 10+ client projects.",
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
+        "Working on a real-world hotel management dashboard, building responsive and interactive user interfaces. Collaborating with the client to convert business requirements into functional UI components with a focus on clean design and performance.",
+      technologies: ["React", "JavaScript", "Tailwind CSS", "Material UI"],
     },
   ];
 
   const stats = [
-    { value: "1+", label: "Years Experience" },
-    { value: "50+", label: "Projects Completed" },
-    { value: "30+", label: "Happy Clients" },
-    { value: "15+", label: "Technologies" },
+    { value: "1+", label: "Real-world Projects" },
+    { value: "1", label: "Active Freelance Client" },
+    { value: "100%", label: "Responsive Design" },
+    { value: "5+", label: "Frontend Technologies" },
   ];
 
   return (
@@ -50,10 +32,11 @@ const Experience = () => {
             Experience
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4">
-            My Professional Journey
+            Hands-on Experience
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-            A timeline of my career growth and achievements
+            Real-world frontend development through freelance and personal
+            projects{" "}
           </p>
         </div>
 

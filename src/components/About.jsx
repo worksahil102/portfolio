@@ -19,18 +19,19 @@ function About() {
     },
     {
       icon: Palette,
-      title: "UI/UX Design",
-      description: "Creating beautiful user interfaces",
+      title: "Responsive UI",
+      description: "Pixel-perfect rendering on all devices.",
     },
     {
       icon: Zap,
       title: "Performance",
-      description: "Optimizing for speed and efficiency",
+      description: "Optimizing load times and API integration.",
     },
     {
       icon: Users,
-      title: "Collaboration",
-      description: "Working effectively in teams",
+      title: "Client Collaboration",
+      description:
+        "Understanding requirements and delivering practical UI solutions",
     },
   ];
 
@@ -48,7 +49,8 @@ function About() {
             Passionate Frontend Developer
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
-            With 1+ years of experience in building modern web applications
+            Focused on building modern, responsive, and user-friendly web
+            applications using React, JavaScript, and modern frontend tools
           </p>
         </div>
       </div>
@@ -56,19 +58,20 @@ function About() {
       <div className="grid lg:grid-cols-1 gap-12 lg:gap-16 items-center">
         {/* left - about text */}
         <div className="flex flex-col justify-center items-center ">
-          <h3 className="text-2xl font-semibold text-foreground mb-6 ">
-            Building Digital Experiences
-          </h3>
-          <p className="text-muted-foreground leading-relaxed mb-6">
-            I'm a passionate frontend developer based in India, specializing in
-            creating exceptional digital experiences. I focus on building
-            accessible, human-centered products that make a difference.
+          <p className="text-muted-foreground leading-relaxed  lg:w-[65%] mb-1 text-lg">
+            I’m a frontend developer based in India, focused on building clean,
+            responsive, and interactive web applications using React,
+            JavaScript, and modern UI libraries like Material UI.
           </p>
-          <p className="text-muted-foreground leading-relaxed lg:w-[60%] mb-8">
-            My journey in web development started 1 years ago, and since then,
-            I've had the privilege of working with startups and established
-            companies, helping them bring their visions to life through clean,
-            efficient code and stunning interfaces.
+          <p className="text-muted-foreground leading-relaxed lg:w-[65%] mb-8 text-lg">
+            I specialize in bridging the gap between design and engineering.
+            Through freelance projects, I’ve delivered real-world frontend
+            solutions, including a{" "}
+            <span className="text-foreground font-semibold">
+              Hotel Management Dashboard
+            </span>
+            , where I focused on scalable UI architecture and efficient data
+            handling.
           </p>
 
           {/* heighlight cards  */}

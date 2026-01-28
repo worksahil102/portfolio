@@ -44,6 +44,11 @@ function ProjectCard({ project }) {
           <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
             {project.category}
           </span>
+          {project.isClient && (
+            <span className="px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full">
+              Client Project
+            </span>
+          )}
         </div>
         <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
           {project.title}

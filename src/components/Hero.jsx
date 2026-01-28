@@ -1,13 +1,7 @@
 import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 import heroImage from "../assets/hero-developer.png";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaBootstrap,
-} from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
+import { SiJavascript, SiMui } from "react-icons/si";
 
 function Hero() {
   const floatingCards = [
@@ -41,17 +35,17 @@ function Hero() {
       delay: "0s",
     },
     {
-      icon: <SiTypescript size={24} className="text-blue-600" />,
-      text: "TypeScript",
+      icon: <SiJavascript size={24} className="text-yellow-400" />,
+      text: "JavaScript",
       top: "35%",
       right: "-8%",
       delay: "1s",
     },
     {
-      icon: <FaNodeJs size={24} className="text-green-500" />,
-      text: "Node.js",
+      icon: <SiMui size={24} className="text-blue-500" />,
+      text: "Material UI",
       bottom: "30%",
-      right: "0%",
+      right: "-5%",
       delay: "2s",
     },
   ];
@@ -70,24 +64,24 @@ function Hero() {
             <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
               <span className="text-muted-foreground text-sm">
-                Available for work
+                Open to Frontend Internship & Junior Roles
               </span>
             </div>
 
-            <h1 className=" text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight ">
-              Hi ,I'm <span className="text-gradient">Sahil</span>
+            <h1 className=" text-3xl sm:text-5xl lg:text-3xl xl:text-5xl font-bold mb-6 leading-tight ">
+              Hi, I'm <span className="text-gradient">Sahil</span>
               <br />
-              <span className="text-foreground"> Mearn Satck Developer</span>
+              <span className="text-foreground"> Frontend React Developer</span>
             </h1>
             <p className="text-muted-foreground text-lg lg:text-xl mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              I craft beautiful, responsive, and user-friendly web experiences
-              using modern technologies like React, TypeScript, and Tailwind
-              CSS.
+              I build responsive and interactive web applications with a strong
+              focus on clean UI, performance, and user experience using React,
+              JavaScript, and Material UI.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <a
-                href="#projects"
+                href="#project"
                 className="btn-gradient px-8 py-4 rounded-full text-foreground font-semibold text-base transition-all duration-300 hover:bg-muted flex items-center justify-center gap-2 "
               >
                 View Projects <ArrowRight size={18} />
@@ -100,12 +94,15 @@ function Hero() {
             <div className="flex items-center gap-4 justify-center lg:justify-start">
               <span className="text-muted-foreground text-sm">Follow me:</span>
               <a
-                href="https://github.com"
+                href="https://github.com/worksahil102"
                 className="glass-card p-3 rounded-full hover:bg-muted transition-colors"
               >
                 <Github size={20} className="text-foreground" />
               </a>
-              <a className="glass-card p-3 rounded-full hover:bg-muted transition-colors ">
+              <a
+                href="https://www.linkedin.com/in/sahil-khedekar-9b0b642b9/"
+                className="glass-card p-3 rounded-full hover:bg-muted transition-colors "
+              >
                 <Linkedin size={20} className="text-foreground" />
               </a>
             </div>
@@ -115,11 +112,11 @@ function Hero() {
           <div className="relative order-1 lg:order-2 flex justify-center">
             <div className="relative">
               {/* developer Image */}
-              <div className="relative z-10 w-[380px] sm:w-[520px] lg:w-[600px] h-[450px] sm:h-[500px] lg:h-[580px] overflow-hidden">
+              <div className="relative z-10 w-[350px] sm:w-[520px] lg:w-[600px] h-[380px] sm:h-[500px] lg:h-[580px] overflow-hidden">
                 <img
                   src={heroImage}
                   alt="Sahil- Mearn Developer"
-                  className="w-full h-full object-cover object-[85%_15%]"
+                  className="w-full h-full object-cover object-[90%_15%]"
                   style={{
                     maskImage:
                       "linear-gradient(to bottom, transparent, black 15%, black 85%, transparent), linear-gradient(to right, transparent, black 15%, black 90%, transparent)",
@@ -137,7 +134,7 @@ function Hero() {
               {floatingCards.map((card, index) => (
                 <div
                   key={index}
-                  className="absolute z-20 glass-card p-3 rounded-full floating-card flex items-center gap-2 "
+                  className="absolute z-20 glass-card p-3 rounded-full floating-card flex items-center gap-2 mx-8"
                   style={{
                     top: card.top,
                     right: card.right,

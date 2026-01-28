@@ -14,10 +14,13 @@ function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-    { icon: Mail, href: "mailto:karan@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/worksahil102", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/sahil-khedekar-9b0b642b9/",
+      label: "LinkedIn",
+    },
+    { icon: Mail, href: "mailto:worksahil@gmail.com.com", label: "Email" },
   ];
   return (
     <footer className="relative py-12 px-4 border-t border-border">
@@ -77,7 +80,7 @@ function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm flex items-center gap-1">
-              © {new Date().getFullYear()} Karan. Made with
+              © {new Date().getFullYear()} Sahil. Made with
               <Heart size={14} className="text-primary fill-primary" /> in India
             </p>
 

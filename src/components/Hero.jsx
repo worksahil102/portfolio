@@ -2,7 +2,7 @@ import { ArrowRight, Download, Github, Linkedin } from "lucide-react";
 import heroImage from "../assets/hero-developer.png";
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
 import { SiJavascript, SiMui } from "react-icons/si";
-import Sahilcv from "../assets/Sahil_cv.pdf";
+import Sahilcv from "../assets/SahilResumeFD.pdf";
 
 function Hero() {
   const floatingCards = [
